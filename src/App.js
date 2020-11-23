@@ -1,13 +1,7 @@
-import Header from "./components/Header";
-import Paragraph from "./components/Paragraph";
-import Square from "./components/Square"
+import Stuff from "./components/Stuff";
 
 const App = () => (
-  <>
-    <Header />
-    <Paragraph />
-    <Square />
-  </>
+  <Stuff />
 );
 
 export default App;
