@@ -1,7 +1,11 @@
-import Header from "./components/Header"
+import Header from "./components/Header";
+import Paragraph from "./components/Paragraph";
 
 const App = () => (
-  <Header />
+  <>
+    <Header />
+    <Paragraph />
+  </>
 );
 
 export default App;
