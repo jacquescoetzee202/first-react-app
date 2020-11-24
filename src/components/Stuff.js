@@ -5,6 +5,7 @@ import People from "./People";
 import Gif from "./Gif";
 import GifDescr from "./GifDescr";
 import Basket from "./Basket";
+import Clicked from "./ex3/Clicked";
 
 
 
@@ -17,6 +18,7 @@ const Stuff = ( {square} ) => (
         }
         <People names={nameList} />
         <Basket items={ items } />
+        <Clicked />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
