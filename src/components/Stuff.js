@@ -4,6 +4,7 @@ import Square from "./Square";
 import People from "./People";
 import Gif from "./Gif";
 import GifDescr from "./GifDescr";
+import Basket from "./Basket";
 
 
 
@@ -15,6 +16,7 @@ const Stuff = ( {square} ) => (
         <Square colour="red" />
         }
         <People names={nameList} />
+        <Basket items={ items } />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
@@ -29,6 +31,13 @@ let paraContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
 let crazyCatPara = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius, Lyco, oratione locuples, rebus ipsis ielunior.";
 
 let nameList = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
+
+let items = [
+    { name: "Coffee", price: 2.10 },
+    { name: "Bananas", price: 3.50 },
+    { name: "Milk", price: 250.65 },
+    { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
+];
 
 Stuff.defaultProps = {
     square: true
