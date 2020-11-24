@@ -5,7 +5,8 @@ import People from "./People";
 import Gif from "./Gif";
 import GifDescr from "./GifDescr";
 import Basket from "./Basket";
-import Clicked from "./ex3/Clicked";
+import Clicked from "./state/Clicked";
+import ToggleText from "./state/ToggleText";
 
 
 
@@ -14,11 +15,12 @@ const Stuff = ( {square} ) => (
         <Header>Hello, world</Header>
         <Paragraph>{ paraContent}</Paragraph>
         {!square ? null :
-        <Square colour="red" />
+        <Square colour="hotpink" />
         }
         <People names={nameList} />
         <Basket items={ items } />
         <Clicked />
+        <ToggleText initial="Hello" alternate="World" /> 
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
