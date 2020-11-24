@@ -6,14 +6,17 @@ import Gif from "./Gif";
 import GifDescr from "./GifDescr";
 
 
-const Stuff = () => (
+
+const Stuff = ( {square} ) => (
     <>
-        <Header text="Hello, world"/>
-        <Paragraph message={ paraContent } />
+        <Header>Hello, world</Header>
+        <Paragraph>{ paraContent}</Paragraph>
+        {!square ? null :
         <Square colour="red" />
+        }
         <People names={nameList} />
-        <Header text="My App"/>
-        <Paragraph message={ crazyCatPara } />
+        <Header>My App</Header>
+        <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
         <GifDescr />
     </>
@@ -26,3 +29,8 @@ let paraContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam
 let crazyCatPara = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius, Lyco, oratione locuples, rebus ipsis ielunior.";
 
 let nameList = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"];
+
+Stuff.defaultProps = {
+    square: true
+  }
+

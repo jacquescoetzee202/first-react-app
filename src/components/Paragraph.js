@@ -1,5 +1,5 @@
-const Paragraph = ({ message }) => (
-    <p>{ message }</p>
+const Paragraph = ({ children }) => (
+    <p>{ children }</p>
 );
 
 Paragraph.defaultProps = {
