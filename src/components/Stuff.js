@@ -7,6 +7,7 @@ import GifDescr from "./GifDescr";
 import Basket from "./Basket";
 import Clicked from "./state/Clicked";
 import ToggleText from "./state/ToggleText";
+import Counter from "./state/Counter";
 
 
 
@@ -20,7 +21,8 @@ const Stuff = ( {square} ) => (
         <People names={nameList} />
         <Basket items={ items } />
         <Clicked />
-        <ToggleText initial="Hello" alternate="World" /> 
+        <ToggleText initial="Hello" alternate="World" />
+        <Counter initial={ 50 } max={ 100 } />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
