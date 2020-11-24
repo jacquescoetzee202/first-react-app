@@ -3,9 +3,11 @@ import BasketItem from "./BasketItem";
 const Basket = ({items}) => (
     <table className="table">
         <thead>
-            <th scope="col">ID</th>
-            <th scope="col">Item</th>
-            <th scope="col">Price</th>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+            </tr>
         </thead>
         <tbody>
             {items.map((item, index) => (
