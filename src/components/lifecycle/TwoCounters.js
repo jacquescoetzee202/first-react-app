@@ -17,8 +17,6 @@ class TwoCounter extends Component {
         const { value1, value2 } = this.state;
         document.title = "Combined Count : " + (value1 + value2);
     }
-
-
     
     componentDidUpdate() {
         const { value1, value2 } = this.state;

@@ -14,7 +14,8 @@ import RollCall from "./state/RollCall";
 import Colours from "./stateTricksy/Colours";
 import Die from "./stateTricksy/Die";
 import GodCounter from "./lifecycle/GodCounter";
-import TwoCounter from "./lifecycle/TwoCounters";
+import TwoCounters from "./lifecycle/TwoCounters";
+import Length from "./forms/Length";
 
 
 
@@ -36,7 +37,8 @@ const Stuff = ( {square} ) => (
         <Colours colours={ colours }></Colours>
         <Die sides={ 6 }></Die>
         <GodCounter />
-        <TwoCounter />
+        <TwoCounters />
+        <Length />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
