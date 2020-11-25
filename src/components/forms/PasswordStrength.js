@@ -26,7 +26,7 @@ class PasswordStrength extends Component {
         } else if (length > 0){
             color = "red";
         } else {
-            color = "none";
+            color = "transparent";
         }
 
         return (
