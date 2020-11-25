@@ -25,7 +25,6 @@ class StepCounter extends Component {
     decreaseClick() {
         const current = this.state.count;
         const next = current - this.props.step;
-        console.log(next);
         if(next >= 0){
             this.setState({ count: next });
         }

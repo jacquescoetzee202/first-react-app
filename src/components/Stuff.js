@@ -9,6 +9,7 @@ import Clicked from "./state/Clicked";
 import ToggleText from "./state/ToggleText";
 import Counter from "./state/Counter";
 import StepCounter from "./state/StepCounter";
+import CatchMeIfYouCan from "./state/CatchMeIfYouCan";
 
 
 
@@ -25,6 +26,7 @@ const Stuff = ( {square} ) => (
         <ToggleText initial="Hello" alternate="World" />
         <Counter initial={ 50 } max={ 100 } />
         <StepCounter max={ 100 } step={ 5 } />
+        <CatchMeIfYouCan jump={ 100 }></CatchMeIfYouCan>
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
