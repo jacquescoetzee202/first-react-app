@@ -20,14 +20,14 @@ class ToggleText extends Component {
     }
 
     render() {
-        let text = this.state.toggleOn ? this.props.alternate : this.props.initial;
+        const { initial, alternate } = this.props;
+        let text = this.state.toggleOn ? alternate : initial;
 
         return (
             <>
                 <p>{ text }</p>
                 <button onClick={ this.handleClick } >Toggle</button>
             </>
-
         );
     }
 }

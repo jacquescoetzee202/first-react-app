@@ -13,6 +13,7 @@ import CatchMeIfYouCan from "./state/CatchMeIfYouCan";
 import RollCall from "./state/RollCall";
 import Colours from "./stateTricksy/Colours";
 import Die from "./stateTricksy/Die";
+import GodCounter from "./lifecycle/GodCounter";
 
 
 
@@ -33,6 +34,7 @@ const Stuff = ( {square} ) => (
         <RollCall names={ nameList } ></RollCall>
         <Colours colours={ colours }></Colours>
         <Die sides={ 6 }></Die>
+        <GodCounter />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
