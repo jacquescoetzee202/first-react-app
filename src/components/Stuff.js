@@ -16,6 +16,7 @@ import Die from "./stateTricksy/Die";
 import GodCounter from "./lifecycle/GodCounter";
 import TwoCounters from "./lifecycle/TwoCounters";
 import Length from "./forms/Length";
+import PasswordStrength from "./forms/PasswordStrength";
 
 
 
@@ -39,6 +40,7 @@ const Stuff = ( {square} ) => (
         <GodCounter />
         <TwoCounters />
         <Length />
+        <PasswordStrength />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
