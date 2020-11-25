@@ -10,6 +10,9 @@ import ToggleText from "./state/ToggleText";
 import Counter from "./state/Counter";
 import StepCounter from "./state/StepCounter";
 import CatchMeIfYouCan from "./state/CatchMeIfYouCan";
+import RollCall from "./state/RollCall";
+import Colours from "./stateTricksy/Colours";
+import Die from "./stateTricksy/Die";
 
 
 
@@ -27,6 +30,9 @@ const Stuff = ( {square} ) => (
         <Counter initial={ 50 } max={ 100 } />
         <StepCounter max={ 100 } step={ 5 } />
         <CatchMeIfYouCan jump={ 100 }></CatchMeIfYouCan>
+        <RollCall names={ nameList } ></RollCall>
+        <Colours colours={ colours }></Colours>
+        <Die sides={ 6 }></Die>
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
@@ -47,6 +53,14 @@ let items = [
     { name: "Bananas", price: 3.50 },
     { name: "Milk", price: 250.65 },
     { name: "The Great Milk Shortage by Simon Schama", price: 12.99 },
+];
+
+let colours = [
+    "#C14412",
+    "#EBB31A",
+    "#8F5318",
+    "#009EAD",
+    "#395967",
 ];
 
 Stuff.defaultProps = {
