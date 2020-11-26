@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./components/Header"
+import Footer from "./components/Footer"
 import Adder from "./components/forms/Adder"
 import Length from "./components/forms/Length"
 import List from "./components/forms/List"
@@ -31,6 +32,7 @@ const App = () => (
       <Die sides={ match.params.sides }></Die>
     )}>
     </Route>
+    <Footer />
   </Router>
 );
 
