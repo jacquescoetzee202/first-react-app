@@ -11,6 +11,7 @@ import TempConverter from "./components/forms/TempConverter"
 import ToggleText from "./components/state/ToggleText";
 import Die from "./components/stateTricksy/Die";
 import Gif from "./components/Gif";
+import Square from "./components/Square";
 
 const App = () => (
   <Router >
@@ -36,6 +37,10 @@ const App = () => (
       </Route>
       <Route exact path="/die/:sides" render={({ match }) => (
         <Die sides={ match.params.sides }></Die>
+        )}>
+      </Route>
+      <Route exact path="/squares/:colour" render={({ match }) => (
+        <Square colour={ match.params.colour }></Square>
       )}>
       </Route>
       <FourOhFour />
