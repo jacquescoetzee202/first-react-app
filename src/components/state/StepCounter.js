@@ -16,15 +16,15 @@ class StepCounter extends Component {
 
     increaseClick() {
         const current = this.state.count;
-        const next = this.props.step + current;
-        if(next <= this.props.max){
+        const next = parseInt(this.props.step) + current;
+        if(next <= parseInt(this.props.max)){
             this.setState({ count: next });
         }
     } 
 
     decreaseClick() {
         const current = this.state.count;
-        const next = current - this.props.step;
+        const next = current - parseInt(this.props.step);
         if(next >= 0){
             this.setState({ count: next });
         }

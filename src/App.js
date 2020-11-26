@@ -12,6 +12,7 @@ import ToggleText from "./components/state/ToggleText";
 import Die from "./components/stateTricksy/Die";
 import Gif from "./components/Gif";
 import Square from "./components/Square";
+import StepCounter from "./components/state/StepCounter";
 
 const App = () => (
   <Router >
@@ -41,6 +42,10 @@ const App = () => (
       </Route>
       <Route exact path="/squares/:colour" render={({ match }) => (
         <Square colour={ match.params.colour }></Square>
+      )}>
+      </Route>
+      <Route exact path="/steps/:max/:step" render={({ match }) => (
+        <StepCounter max={ match.params.max } step={ match.params.step } ></StepCounter>
       )}>
       </Route>
       <FourOhFour />
