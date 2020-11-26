@@ -1,5 +1,5 @@
 import Stuff from "./components/Stuff";
-import FadeIn from "./components/FadeIn";
+// import FadeIn from "./components/FadeIn";
 
 const App = () => (
   <>

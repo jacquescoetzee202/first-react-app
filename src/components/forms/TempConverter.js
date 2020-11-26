@@ -33,12 +33,14 @@ class TempConverter extends Component {
             <div className="form-group">
                 <label>Celcius</label>
                 <input
+                    type = "number"
                     className = "form-control"
                     value = {this.state.celcius}
                     onChange = { this.celciusChange }
                 />
                 <label>Fahrenhiet</label>
                 <input
+                    type = "number"
                     className = "form-control"
                     value = {this.state.farhenhiet}
                     onChange = { this.farhenhietChange }
