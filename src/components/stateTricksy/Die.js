@@ -12,7 +12,7 @@ class Die extends Component {
     }
 
     handleClick() {
-        const roll = Math.floor(Math.random() * (this.props.sides + 1));
+        const roll = Math.floor(Math.random() * (parseInt(this.props.sides) + 1));
         this.setState({ currentNum: roll });
     }
 
