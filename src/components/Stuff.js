@@ -19,6 +19,7 @@ import Length from "./forms/Length";
 import PasswordStrength from "./forms/PasswordStrength";
 import TempConverter from "./forms/TempConverter";
 import List from "./forms/List";
+import Adder from "./forms/Adder";
 
 
 
@@ -45,6 +46,7 @@ const Stuff = ( {square} ) => (
         <PasswordStrength />
         <TempConverter />
         <List />
+        <Adder />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
