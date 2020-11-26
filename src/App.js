@@ -37,15 +37,15 @@ const App = () => (
       )} >
       </Route>
       <Route exact path="/die/:sides" render={({ match }) => (
-        <Die sides={ match.params.sides }></Die>
-        )}>
+        <Die sides={ match.params.sides } />
+      )}>
       </Route>
       <Route exact path="/squares/:colour" render={({ match }) => (
-        <Square colour={ match.params.colour }></Square>
+        <Square colour={ match.params.colour } />
       )}>
       </Route>
       <Route exact path="/steps/:max/:step" render={({ match }) => (
-        <StepCounter max={ match.params.max } step={ match.params.step } ></StepCounter>
+        <StepCounter max={ match.params.max } step={ match.params.step } />
       )}>
       </Route>
       <FourOhFour />
