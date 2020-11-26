@@ -20,6 +20,7 @@ import PasswordStrength from "./forms/PasswordStrength";
 import TempConverter from "./forms/TempConverter";
 import List from "./forms/List";
 import Adder from "./forms/Adder";
+import Transform from "./forms/Transform";
 
 
 
@@ -47,6 +48,9 @@ const Stuff = ( {square} ) => (
         <TempConverter />
         <List />
         <Adder />
+        <Transform transform={ x => x + 1 } description="add one" />
+        <Transform transform={ x => x * x } description="squared" />
+        <Transform transform={ x => Math.sqrt(x) } description="square root" />
         <Header>My App</Header>
         <Paragraph>{ crazyCatPara }</Paragraph>
         <Gif />
