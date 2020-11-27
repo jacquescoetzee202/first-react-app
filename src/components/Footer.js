@@ -20,6 +20,9 @@ const Footer = () => (
         <li className="list-group-item">
             <Link to="/die/6">Roll the Die!</Link>
         </li>
+        <li className="list-group-item">
+            <Link to="/bootstrapped">Bootstrap React Components</Link>
+        </li>
     </ul>
 );
 

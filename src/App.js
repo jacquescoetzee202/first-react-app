@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import Bootstrapped from "./Bootstrapped"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import FourOhFour from "./components/FourOhFour"
@@ -24,6 +25,9 @@ const App = () => (
         <Gif />
         <Progress />
         <CatchMeIfYouCan jump={ 500 } />
+      </Route>
+      <Route exact path="/bootstrapped">
+        <Bootstrapped />
       </Route>
       <Route exact path="/lists">
         <Adder />
