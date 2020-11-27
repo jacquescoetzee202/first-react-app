@@ -14,6 +14,7 @@ import Gif from "./components/Gif";
 import Square from "./components/Square";
 import StepCounter from "./components/state/StepCounter";
 import Progress from "./premade-components/Progress.js";
+import CatchMeIfYouCan from "./premade-components/CatchMeIfYouCan.js";
 
 const App = () => (
   <Router >
@@ -22,6 +23,7 @@ const App = () => (
       <Route exact path="/">
         <Gif />
         <Progress />
+        <CatchMeIfYouCan jump={ 500 } />
       </Route>
       <Route exact path="/lists">
         <Adder />

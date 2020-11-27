@@ -14,13 +14,8 @@ class Progress extends Component {
     }
 
     handleClick() {
-        const currentProgress = this.state.progress;
-        if (currentProgress < 100) {
-            const updated = this.state.progress + 10;
-            this.setState({ progress: updated });
-        } else {
-            this.setState({ progress: 100 });
-        }
+        const updated = this.state.progress + 10;
+        this.setState({ progress: updated });
     }
 
     render() {
@@ -28,7 +23,8 @@ class Progress extends Component {
         return (
             <>
                 <ProgressBar animated now={progress} label={`${progress}%`} max={100} />
-                <Button  
+                <Button
+                    disabled={progress === 100 ? true : false}  
                     onClick={ this.handleClick }
                     variant="primary"
                 >
