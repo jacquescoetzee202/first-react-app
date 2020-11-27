@@ -13,6 +13,7 @@ import Die from "./components/stateTricksy/Die";
 import Gif from "./components/Gif";
 import Square from "./components/Square";
 import StepCounter from "./components/state/StepCounter";
+import Progress from "./premade-components/Progress.js";
 
 const App = () => (
   <Router >
@@ -20,6 +21,7 @@ const App = () => (
     <Switch>
       <Route exact path="/">
         <Gif />
+        <Progress />
       </Route>
       <Route exact path="/lists">
         <Adder />
@@ -43,7 +45,7 @@ const App = () => (
       <Route exact path="/squares/:colour" render={({ match }) => (
         <Square colour={ match.params.colour } />
       )}>
-      </Route>
+      </Route>  /steps/5/10
       <Route exact path="/steps/:max/:step" render={({ match }) => (
         <StepCounter max={ match.params.max } step={ match.params.step } />
       )}>
